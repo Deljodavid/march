@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="listeners.Listenerclass" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="1" />
+				<include name="0" />
+			</run>
+		</groups>
+		<!-- <classes>
+			<class name="mar10.Wikipedia" />
+			<class name="mar10.google" />
+		</classes> -->
+		<packages>
+            <package name="mar10"/>
+        </packages>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
